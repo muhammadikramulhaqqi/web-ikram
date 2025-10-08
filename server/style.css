@@ -1,0 +1,88 @@
+/* Tampilan umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1f29, #2b2d42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Kartu profil */
+.profile-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Foto profil */
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+}
+
+/* Nama dan detail */
+.profile-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 15px 0 8px;
+    color: #333;
+}
+
+.profile-details {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Link sosial media */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #f0f2f5;
+    border-radius: 50%;
+    color: #555;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Efek hover warna sesuai logo */
+.social-links a:hover {
+    transform: translateY(-6px);
+    color: #fff;
+}
+
+.social-links a[title="Instagram"]:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-links a[title="Gmail"]:hover {
+    background-color: #ea4335;
+}
+
+.social-links a[title="LinkedIn"]:hover {
+    background-color: #0077b5;
+}
